@@ -192,6 +192,10 @@
     <Compile Include="Migrations\201807280052074_AddModel.Designer.cs">
       <DependentUpon>201807280052074_AddModel.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201807280055121_SeedData.cs" />
+    <Compile Include="Migrations\201807280055121_SeedData.Designer.cs">
+      <DependentUpon>201807280055121_SeedData.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Beer.cs" />
     <Compile Include="Models\Pub.cs" />
@@ -269,6 +273,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201807280052074_AddModel.resx">
       <DependentUpon>201807280052074_AddModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201807280055121_SeedData.resx">
+      <DependentUpon>201807280055121_SeedData.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
