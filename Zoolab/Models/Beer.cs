@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
@@ -17,5 +18,10 @@ namespace Zoolab.Models
         public float Abv { get; set; }
 
         public ICollection<Pub> Pubs { get; set; }
+
+        public Beer()
+        {
+            Pubs = new Collection<Pub>();
+        }
     }
 }
